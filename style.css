@@ -113,6 +113,8 @@
 
 body {
     height: 100dvh;
+    max-width: 100dvw;
+    margin: 0;
 }
 
 #section1 {

@@ -1,109 +1,201 @@
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: normal;
-    font-weight: lighter;
-    src: url('assets/fonts/CascadiaCode-ExtraLight.woff2') format('woff2'),
-}
+@layer font {
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: lighter;
+        src: url('assets/fonts/CascadiaCode-ExtraLight.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: italic;
-    font-weight: lighter;
-    src: url('assets/fonts/CascadiaCode-ExtraLightItalic.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: italic;
+        font-weight: lighter;
+        src: url('assets/fonts/CascadiaCode-ExtraLightItalic.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: italic;
-    font-weight: normal;
-    src: url('assets/fonts/CascadiaCode-Italic.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: italic;
+        font-weight: normal;
+        src: url('assets/fonts/CascadiaCode-Italic.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: normal;
-    font-weight: 300;
-    src: url('assets/fonts/CascadiaCode-Light.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: 300;
+        src: url('assets/fonts/CascadiaCode-Light.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: italic;
-    font-weight: 300;
-    src: url('assets/fonts/CascadiaCode-LightItalic.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: italic;
+        font-weight: 300;
+        src: url('assets/fonts/CascadiaCode-LightItalic.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: normal;
-    font-weight: 400;
-    src: url('assets/fonts/CascadiaCode-Regular.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: 400;
+        src: url('assets/fonts/CascadiaCode-Regular.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: normal;
-    font-weight: 500;
-    src: url('assets/fonts/CascadiaCode-SemiBold.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: 500;
+        src: url('assets/fonts/CascadiaCode-SemiBold.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: italic;
-    font-weight: 500;
-    src: url('assets/fonts/CascadiaCode-SemiBoldItalic.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: italic;
+        font-weight: 500;
+        src: url('assets/fonts/CascadiaCode-SemiBoldItalic.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: normal;
-    font-weight: 200;
-    src: url('assets/fonts/CascadiaCode-SemiLight.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: 200;
+        src: url('assets/fonts/CascadiaCode-SemiLight.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: italic;
-    font-weight: 200;
-    src: url('assets/fonts/CascadiaCode-SemiLightItalic.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: italic;
+        font-weight: 200;
+        src: url('assets/fonts/CascadiaCode-SemiLightItalic.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    src: url('assets/fonts/CascadiaCode.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        src: url('assets/fonts/CascadiaCode.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: italic;
-    src: url('assets/fonts/CascadiaCodeItalic.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: italic;
+        src: url('assets/fonts/CascadiaCodeItalic.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: normal;
-    font-weight: bold;
-    src: url('assets/fonts/CascadiaCode-Bold.woff2') format('woff2'),
-}
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: bold;
+        src: url('assets/fonts/CascadiaCode-Bold.woff2') format('woff2'),
+    }
 
-@font-face {
-    font-family: 'Cascadia Code';
-    font-style: italic;
-    font-weight: bold;
-    src: url('assets/fonts/CascadiaCode-BoldItalic.woff2') format('woff2'),
-}
-
-@media (prefers-color-scheme: dark) {
-    * {
-        background: black;
-        color: white;
+    @font-face {
+        font-family: 'Cascadia Code';
+        font-style: italic;
+        font-weight: bold;
+        src: url('assets/fonts/CascadiaCode-BoldItalic.woff2') format('woff2'),
     }
 }
 
-@media (prefers-color-scheme: light) {
-    * {
-        background: white;
-        color: black;
+@layer theme {
+    @media (prefers-color-scheme: dark) {
+        * {
+            background: black;
+            color: white;
+        }
+
+        #section1 {
+            .code {
+                .code-content {
+
+                    .datatype,
+                    .booleanValue {
+                        color: #326dad;
+                    }
+
+                    .variable {
+                        color: #4fc1ff;
+                    }
+
+                    .bracket {
+                        color: #efa800;
+                    }
+
+                    .square-bracket,
+                    .square-bracket-end {
+                        color: #da4b75;
+                    }
+
+                    .property,
+                    .propertyValue {
+                        color: #9cd6f0;
+                    }
+
+                    .function-property {
+                        color: #cfc68f;
+                    }
+
+                    .stringValue {
+                        color: #ce9178;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        * {
+            background: white;
+            color: black;
+        }
+
+        #section1 {
+            .code {
+                .code-content {
+
+                    .datatype,
+                    .booleanValue {
+                        color: #3100ff;
+                    }
+
+                    .variable {
+                        color: #0085d3;
+                    }
+
+                    .bracket {
+                        color: #1c89fc;
+                    }
+
+                    .square-bracket,
+                    .square-bracket-end {
+                        color: #31b0d1;
+                    }
+
+                    .property,
+                    .propertyValue {
+                        color: #001080;
+                    }
+
+                    .function-property {
+                        color: #795e26;
+                    }
+
+                    .stringValue {
+                        color: #c36342;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@layer animation {
+    @keyframes blinking {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 }
 
@@ -121,18 +213,100 @@ body {
     display: flex;
     align-items: center;
     height: 100dvh;
+    justify-content: space-evenly;
 
-    & p {
-        font-size: 40px;
-        width: 50dvw;
-        padding: 0 0 0 10dvw;
+    .terminal {
+        .terminal-header {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 10px;
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+                background-color: white;
+            }
+
+            img::after {
+                content: "Command Prompt";
+            }
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .terminal-content {
+            font-size: 20px;
+            font-weight: bold;
+
+            .command-text-cursor {
+                animation: blinking 1.1s infinite cubic-bezier(0.96, -0.77, 0, 1.6);
+            }
+        }
+    }
+
+    .code {
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 20px;
+
+        .code-header {
+            display: flex;
+
+            .circle-red,
+            .circle-yellow,
+            .circle-green {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin-right: 5px;
+            }
+
+            .circle-red {
+                background-color: #ff5f5a;
+            }
+
+            .circle-yellow {
+                background-color: #ffbe2e;
+            }
+
+            .circle-green {
+                background-color: #2aca44;
+            }
+        }
+
+        .code-content {
+            padding: 20px 0;
+
+            .square-bracket-end::before {
+                content: "    ";
+                white-space: pre;
+            }
+
+            .property::before {
+                content: "    ";
+                white-space: pre
+            }
+
+            .function-property::before {
+                content: "    ";
+                white-space: pre;
+            }
+
+            .stringValue.newline::before {
+                content: "        ";
+                white-space: pre;
+            }
+        }
     }
 }
 
 #section2 {
     height: 100dvh;
 
-    & #section2-head, #section2-end {
+    & #section2-head,
+    #section2-end {
         color: #c22085;
         padding-left: 20dvw;
     }
@@ -144,7 +318,7 @@ body {
     & #section2-head::after {
         content: ">";
     }
-    
+
     & #section2-end::before {
         content: "</";
     }
@@ -158,7 +332,8 @@ body {
 #section3 {
     height: 100dvh;
 
-    & #section3-head, #section3-end {
+    & #section3-head,
+    #section3-end {
         color: #2d9687;
         padding-left: 20dvw;
     }
@@ -170,7 +345,7 @@ body {
     & #section3-head::after {
         content: ">";
     }
-    
+
     & #section3-end::before {
         content: "</";
     }
@@ -184,7 +359,8 @@ body {
 #section4 {
     height: 100dvh;
 
-    & #section4-head, #section4-end {
+    & #section4-head,
+    #section4-end {
         padding-left: 20dvw;
     }
 
@@ -195,7 +371,7 @@ body {
     & #section4-head::after {
         content: ">";
     }
-    
+
     & #section4-end::before {
         content: "</";
     }

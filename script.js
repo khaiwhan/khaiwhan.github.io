@@ -1,14 +1,23 @@
-const about_me = {
-    name: "Khaiwhan 🐣",
-    skills: [
-        "Angular", "Express", "Python", "scss",
-        "sass", ".NET", "MySQL", "SQL Server",
-        "Postgres", "Redis", "Docker", "Linux"
-    ],
-    jobPosition: "Full-Stack Developer",
-    hardWorker: true,
-    quickLearner: true,
-    problemSolver: true,
-    teamManagement: true,
-    hireable: () => this.hardWorker && this.teamManagement
+const load = () => {
+    generateHome()
 }
+
+const generateHome = () => {
+    let element = document.querySelector("#section1 .terminal .terminal-content p #terminal-content-wording")
+    const word = ` Hi 👋, I'm Khaiwhan 🐣 
+    Coding, programming, and AI.
+    Full-Stack Developer.`
+    let i = 0
+    const interval = setInterval(() => {
+        if (i < word.length) {
+            if (word[i] === "\n") element.innerHTML += "<br>"
+            else element.innerHTML += word[i]
+        }
+        else {
+            clearInterval(interval)
+        }
+        i++;
+    }, 50);
+}
+
+load()

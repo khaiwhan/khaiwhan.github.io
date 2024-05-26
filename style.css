@@ -260,18 +260,10 @@
             }
 
             .code {
-                width: 100% !important;
+                width: 90% !important;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-
-                .code-header {
-                    padding-left: 20px;
-                }
-
-                .code-content {
-                    padding: 20px !important;
-                }
             }
         }
     }
@@ -280,15 +272,12 @@
         #section1 {
             .terminal {
                 .terminal-header {
-                    width: 56dvw !important;
-
                     span {
                         font-size: 15px !important;
                     }
                 }
 
                 .terminal-content {
-                    width: 56dvw !important;
                     font-size: 15px !important;
                 }
             }
@@ -305,11 +294,13 @@
         #section1 {
             .terminal {
                 .terminal-header {
-                    width: 70dvw !important;
+                    span {
+                        font-size: 13px !important;
+                    }
                 }
 
                 .terminal-content {
-                    width: 70dvw !important;
+                    font-size: 13px !important;
                 }
             }
         }
@@ -333,6 +324,8 @@ body {
     justify-content: space-evenly;
 
     .terminal {
+        width: 30dvw;
+
         .terminal-header {
             display: flex;
             align-items: center;
@@ -353,7 +346,6 @@ body {
         .terminal-content {
             font-size: 20px;
             font-weight: bold;
-            width: 30dvw;
             height: 90px;
         }
     }

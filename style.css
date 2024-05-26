@@ -321,7 +321,7 @@ body {
     display: flex;
     align-items: center;
     height: 100dvh;
-    justify-content: space-evenly;
+    justify-content: center;
 
     .terminal {
         width: 30dvw;

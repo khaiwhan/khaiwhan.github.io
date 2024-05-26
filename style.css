@@ -354,11 +354,11 @@
     @media screen and (max-width:500px) {
         @keyframes boxShadowMove {
             0% {
-                box-shadow: 0px 0px 300px 0px var(--code-box-shadow);
+                box-shadow: 0px 0px 300px 0px var(--code-box-shadow) !important;
             }
 
             100% {
-                box-shadow: 0px 40dvh 300px 0px var(--code-box-shadow);
+                box-shadow: 0px 40dvh 300px 0px var(--code-box-shadow) !important;
             }
         }
 
@@ -366,13 +366,28 @@
             .terminal {
                 .terminal-header {
                     span {
-                        font-size: 13px !important;
+                        font-size: 10px !important;
                     }
                 }
 
                 .terminal-content {
-                    font-size: 13px !important;
+                    font-size: 10px !important;
                 }
+            }
+
+            .code {
+
+                .code-header,
+                .code-content {
+                    font-size: 10px !important;
+                }
+            }
+        }
+
+        #section2 {
+            #sec2-subject {
+                text-align: center;
+                margin-left: 0 !important;
             }
         }
     }

@@ -10,6 +10,31 @@
     }
 }
 
+@layer global {
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, rgba(9, 9, 121, 1) 0%, rgb(255 6 92) 20%, rgba(9, 9, 121, 1) 80%);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+    }
+
+    ::selection {
+        background-color: rgb(255 6 92);
+        color: whitesmoke
+    }
+}
+
 @layer font {
     @font-face {
         font-family: 'Cascadia Code';
@@ -202,6 +227,16 @@
                 }
             }
         }
+
+        #section2 {
+
+            #sec2-subject {
+
+                span {
+                    background: none !important
+                }
+            }
+        }
     }
 }
 
@@ -212,6 +247,30 @@
         }
 
         to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes boxShadowMove {
+        0% {
+            box-shadow: 0px 0px 300px 0px var(--code-box-shadow);
+        }
+
+        100% {
+            box-shadow: -35dvw 40dvh 300px 0px var(--code-box-shadow);
+        }
+    }
+
+    @keyframes fade-in {
+
+        0%,
+        25%,
+        50%,
+        75% {
+            opacity: 0;
+        }
+
+        100% {
             opacity: 1;
         }
     }
@@ -270,6 +329,8 @@
 
     @media screen and (max-width:700px) {
         #section1 {
+            justify-content: space-evenly !important;
+
             .terminal {
                 .terminal-header {
                     span {
@@ -291,6 +352,16 @@
     }
 
     @media screen and (max-width:500px) {
+        @keyframes boxShadowMove {
+            0% {
+                box-shadow: 0px 0px 300px 0px var(--code-box-shadow);
+            }
+
+            100% {
+                box-shadow: 0px 40dvh 300px 0px var(--code-box-shadow);
+            }
+        }
+
         #section1 {
             .terminal {
                 .terminal-header {
@@ -359,8 +430,9 @@ body {
         border: 1px solid transparent;
         background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box, linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgb(255 6 92) 20%, rgba(9, 9, 121, 1) 50%) border-box;
         border-radius: 10px;
-        box-shadow: 0px 0px 300px 0px var(--code-box-shadow);
         border-bottom: 1px solid rgba(9, 9, 121);
+        animation: boxShadowMove linear;
+        animation-timeline: scroll(y);
 
         .code-header {
             display: flex;
@@ -424,78 +496,33 @@ body {
 #section2 {
     height: 100dvh;
 
-    & #section2-head,
-    #section2-end {
-        color: #c22085;
-        padding-left: 20dvw;
+
+    #sec2-subject {
+        margin-left: 25dvw;
+        animation: fade-in ease-in-out;
+        animation-timeline: scroll(y);
+        background: none;
+        margin-bottom: 20dvh;
+
+        span {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
     }
 
-    & #section2-head::before {
-        content: "<";
-    }
+    #sec2-content {
+        text-align: center;
+        background: none;
 
-    & #section2-head::after {
-        content: ">";
-    }
-
-    & #section2-end::before {
-        content: "</";
-    }
-
-    & #section2-end::after {
-        content: ">";
-    }
-
-}
-
-#section3 {
-    height: 100dvh;
-
-    & #section3-head,
-    #section3-end {
-        color: #2d9687;
-        padding-left: 20dvw;
-    }
-
-    & #section3-head::before {
-        content: "<";
-    }
-
-    & #section3-head::after {
-        content: ">";
-    }
-
-    & #section3-end::before {
-        content: "</";
-    }
-
-    & #section3-end::after {
-        content: ">";
-    }
-
-}
-
-#section4 {
-    height: 100dvh;
-
-    & #section4-head,
-    #section4-end {
-        padding-left: 20dvw;
-    }
-
-    & #section4-head::before {
-        content: "<";
-    }
-
-    & #section4-head::after {
-        content: ">";
-    }
-
-    & #section4-end::before {
-        content: "</";
-    }
-
-    & #section4-end::after {
-        content: ">";
+        .sec2-content {
+            padding: 30px 20px;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin: 50px auto;
+            width: 20%;
+        }
     }
 }

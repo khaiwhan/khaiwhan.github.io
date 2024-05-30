@@ -1071,6 +1071,11 @@
         }
 
         #section2 {
+            display: flex !important;
+            align-items: center !important;
+            flex-direction: column !important;
+            justify-content: space-around !important;
+
             #sec2-content {
                 justify-content: center !important;
 
